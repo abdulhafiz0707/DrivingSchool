@@ -1,0 +1,158 @@
+@import "../styles/mixin";
+
+// Основной контейнер
+.driving {
+  width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+
+  // Изображение Driving3 (центрирование и позиционирование)
+  .Driving3 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 540px;
+    top: 195px;
+  }
+
+  // Фоновые изображения
+  .driving-images {
+    background-image: url('../../assets/image/Driving1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    z-index: -5;
+
+    img {
+      width: 500px;
+      height: 600px;
+      position: relative;
+      right: 80px;
+    }
+  }
+
+  // Текстовая область
+  .driving-texts {
+    width: 340px;
+    height: 600px;
+    color: #fff;
+    background: rgb(88, 174, 230);
+    border-radius: 48% 0 0 48%;
+    text-align: right;
+    padding: 100px 230px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    z-index: -1;
+
+    .texts {
+      padding-top: 70px;
+
+      // Заголовок
+      h1 {
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 415px;
+      }
+
+      // Параграф
+      p {
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: 1px;
+        width: 297px;
+        height: 50px;
+        position: relative;
+        left: 115px;
+      }
+
+      // Подзаголовок
+      h2 {
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 1px;
+        text-align: right;
+        width: 430px;
+        height: 62px;
+        position: relative;
+        right: 18px;
+      }
+    }
+  }
+
+  // Кнопка
+$color: rgb(88, 174, 230);
+
+$color2: rgb(255, 255, 255);
+
+button {
+  width: 298px;
+    height: 57px;
+    display: inline-block;
+      padding: 0.75rem 1.25rem;
+      border-radius: 40px;
+      color: $color2;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s;
+      overflow: hidden;
+      z-index: 1;
+      border: none;
+      font-size: 21px;
+      font-weight: 700;
+      cursor: pointer;
+      position: relative;
+      left: 780px;
+      top: 450px;
+      border: 0.5px solid $color2;
+      font-family: 'Nunito', sans-serif;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color;
+        border-radius: 40px;
+        z-index: -2;
+      }
+    
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($color, 15%);
+        transition: all 0.3s;
+        border-radius: 40px;
+        z-index: -1;
+      }
+    
+      &:hover {
+        color: $color2;
+    
+        &:before {
+          width: 100%;
+        }
+      }
+}
+}

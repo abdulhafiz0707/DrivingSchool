@@ -1,0 +1,30 @@
+@import "../styles//mixin";
+
+.Benefits {
+  width: 1400px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px dotted gray;
+  position: relative;
+  top: 30px;
+
+  div {
+    @include flexbox(space-between, center);
+    width: 1400px;
+    margin: 0 auto;
+    gap: 5px;
+
+    img {
+      position: relative;
+      left: 18px;
+    }
+
+    p {
+      color: rgb(88, 88, 88);
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}

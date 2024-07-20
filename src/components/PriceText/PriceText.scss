@@ -1,0 +1,107 @@
+.Dont {
+  width: 1440px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.PriceText {
+  background-image: url('../../assets/image/Price_text.png');
+  width: 1440px;
+  height: 349px;
+}
+
+.PriceText_content {
+  width: 1076px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: 70px;
+  left: 150px;
+}
+
+.PriceText_content2 {
+  width: 329px;
+  height: 189px;
+}
+
+.PriceText_content2 h1 {
+  width: 267px;
+  height: 62px;
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.PriceText_content2 p {
+  width: 329px;
+  height: 70px;
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.PriceText_content3 {
+  width: 226px;
+  height: 189px;
+}
+
+.PriceText_content3 h1 {
+  width: 206px;
+  height: 62px;
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.PriceText_content3 p {
+  width: 226px;
+  height: 47px;
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.PriceText_content4 {
+  width: 329px;
+  height: 190px;
+}
+
+.PriceText_content4 h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.PriceText_content4 p {
+  width: 329px;
+  height: 139px;
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-align: center;
+}

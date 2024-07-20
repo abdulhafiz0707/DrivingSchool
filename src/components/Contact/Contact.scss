@@ -1,0 +1,95 @@
+.Contact {
+  width: 1440px;
+  height: 535px;
+  margin: 0 auto;
+  background-color: rgb(222, 233, 241);
+
+  .Contact_title {
+    width: 900px;
+    height: 138px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+
+    h1 {
+      color: rgb(45, 47, 48);
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 130%;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      height: 40px;
+    }
+
+    div {
+      width: 693px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      gap: 24px;
+
+      p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      
+      i {
+        font-style: normal;
+        color: rgb(88, 174, 230);
+      }
+    }
+  }
+
+  .Contact_svag {
+    width: 1076px;
+    height: 194px;
+    margin: 0 auto;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+
+    h1 {
+      color: rgb(88, 174, 230);
+      font-family: 'Nunito', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 320%;
+      letter-spacing: 1px;
+      text-align: center;
+      height: 70px;
+    }
+
+    .Brokk {
+      width: 835px;
+      height: 47px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        p {
+          color: rgb(40, 49, 73);
+          font-family: 'Nunito', sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 130%;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

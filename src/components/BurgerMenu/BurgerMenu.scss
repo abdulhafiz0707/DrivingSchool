@@ -1,0 +1,118 @@
+@import "../styles//mixin";
+
+.burger-container{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(88, 174, 230);
+  z-index: 999999;
+
+  .burger_header {
+    display: flex;
+    // justify-content: space-evenly;
+    align-items: center;
+    width: 351px;
+    padding: 20px;
+
+
+
+    .number {
+      color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        left: 30px;
+    }
+
+    .close {
+      border: none;
+      background-color: rgb(88, 174, 230);
+      cursor: pointer;
+    }
+  }
+
+  .burger_content {
+    width: 164px;
+    height: 250px;
+    text-align: left;
+    padding: 20px;
+
+    h1 {
+      color: rgb(45, 47, 48);
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        // line-height: 22px;
+        letter-spacing: 1px;
+        text-align: left;
+        height: 45px;
+    }
+
+    p {
+      color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 1px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .connection {
+
+      p {
+        width: 309px;
+        color: rgb(255, 255, 255);
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 130%;
+          letter-spacing: 0px;
+          text-align: left;
+      }
+
+      div {
+        width: 112px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+
+  
+}
+.open{
+  animation: 0.5s open forwards;
+}
+.close{
+  animation: 0.5s close forwards;
+}
+@keyframes open {
+  0%{
+    transform: translateX(200%);
+    
+  }
+  100%{
+  transform: translateX(0);
+  }
+}
+@keyframes close {
+  0%{
+    
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(200%);
+  }
+
+
+}

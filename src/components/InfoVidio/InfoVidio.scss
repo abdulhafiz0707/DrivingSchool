@@ -1,0 +1,71 @@
+.InfoVidio {
+  width: 1400px;
+  height: 430px;
+  margin: 0 auto;
+
+  .InfoVidio-Container {
+    display: flex;
+    gap: 8%;
+
+    .InfoVidio-images {
+      /* width: 900px; */
+
+      img {
+        /* Добавьте стили для изображений здесь */
+      }
+    }
+
+    .InfoVidio-texts {
+      text-align: left;
+
+      h1 {
+        color: rgb(0, 0, 0);
+        font-family: 'Nunito', sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 0%;
+        letter-spacing: 1px;
+        text-align: left;
+        height: 30px;
+      }
+
+      p {
+        width: 585px;
+        height: 150px;
+        color: rgb(0, 0, 0);
+        font-family: 'Nunito', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 1px;
+        text-align: left;
+        position: relative;
+        bottom: 15px;
+      }
+
+      .InfoVidio-logs {
+        display: flex;
+        position: relative;
+        top: 50px;
+        gap: 25px;
+
+        h1 {
+          color: rgb(88, 88, 88);
+          font-family: 'Nunito', sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 14px;
+          letter-spacing: 1px;
+          text-align: center;
+          position: relative;
+          top: 13px;
+        }
+
+
+        img {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}

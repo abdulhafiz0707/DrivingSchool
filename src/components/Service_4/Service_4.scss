@@ -1,0 +1,150 @@
+@import "../styles/mixin";
+
+.Service_4 {
+  width: 1440px;
+  height: 690px;
+  margin: 0 auto;
+  position: relative;
+  top: 78px;
+  display: flex;
+  justify-content: left;
+
+  .Service-container_4 {
+    display: flex;
+    position: relative;
+    left: 4pc;
+
+    img {
+      /* Add styles for images here if needed */
+    }
+
+    .Service-texts_4 {
+      text-align: left;
+      position: relative;
+      top: 35px;
+
+      h1 {
+        width: 350px;
+        height: 40px;
+        color: rgb(45, 47, 48);
+        font-family: 'Nunito', sans-serif;
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-align: left;
+
+        i {
+          font-style: normal;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: rgb(88, 174, 230);
+        }
+      }
+
+      div {
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 14px;
+          height: 14px;
+          position: relative;
+          top: 40px;
+          text-align: left;
+        }
+
+        p {
+          position: relative;
+          left: 20px;
+          top: 4px;
+          color: rgb(45, 47, 48);
+          font-family: 'Nunito', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          height: 0;
+        }
+      }
+
+      .laptop {
+        img {
+          width: 1000px;
+        }
+      }
+
+      .Service_4_button {
+        display: flex;
+        justify-content: start;
+        gap: 30px;
+
+        $color: rgb(88, 174, 230);
+
+        button {
+          width: 137px;
+          height: 34px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(88, 174, 230);
+          border-radius: 15px;
+          border: none;
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito', sans-serif;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 14px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          position: relative;
+          top: 40px;
+          cursor: pointer;
+          padding: 0.75rem 1.25rem;
+          transition: all 0.3s;
+          overflow: hidden;
+          z-index: 1;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color;
+            z-index: -2;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: darken($color, 15%);
+            transition: all 0.3s;
+            border-radius: 10rem;
+            z-index: -1;
+          }
+
+          &:hover {
+            color: #fff;
+
+            &:before {
+              width: 100%;
+            }
+          }
+        }
+
+        .consultation {
+          width: 301px;
+          height: 34px;
+          box-sizing: border-box;
+          border-radius: 15px;
+          background: rgb(255, 255, 255);
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}

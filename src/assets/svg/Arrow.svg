@@ -1,0 +1,12 @@
+<svg width="14.000000" height="7.000000" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<pattern id="pattern_12_6630" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+			<use xlink:href="#image12_663_0" transform="matrix(0.071429,0,0,0.142857,0,0)"/>
+		</pattern>
+		<image id="image12_663_0" width="14.000000" height="7.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAABHNCSVQICAgIfAhkiAAAAFVJREFUGJWd0CESQFAUhtFDYwdvA7p92ITNqYIi2Aaj66KsCI/y3vjKTWf+mcu7gBmtROUHLTixp2Dx3AYjDvQpFMMJHTbUGe76vRgXsGJA9QdnffUGQ8QNSZ9TKBUAAAAASUVORK5CYII="/>
+	</defs>
+	<rect id="img_png" width="14.000000" height="7.000000" fill="url(#pattern_12_6630)" fill-opacity="1.000000"/>
+</svg>

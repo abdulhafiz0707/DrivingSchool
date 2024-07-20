@@ -1,0 +1,140 @@
+.Practice {
+  width: 1440px;
+  height: 590px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .Practice_container {
+
+    .Practice_title {
+      width: 550px;
+      height: 230px;
+
+      .titile {
+        font-family: 'Nunito', sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: 1px;
+        text-align: left;
+        color: rgb(45, 47, 48);
+
+
+        i {
+          color: rgb(88, 174, 230);
+          font-family: 'Nunito', sans-serif;
+          font-style: normal;
+        }
+      }
+
+    }
+
+
+    p {
+      width: 550px;
+      height: 100px;
+      color: rgb(45, 47, 48);
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+
+    .Practice_titles {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      height: 0;
+
+      h4 {
+        color: rgb(45, 47, 48);
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 130%;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+    }
+
+    button {
+      position: relative;
+      bottom: 55px;
+      height: 39px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      background: rgb(88, 174, 230);
+      border: none;
+      color: rgb(255, 255, 255);
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 1px;
+      text-align: left;
+      text-transform: uppercase;
+      cursor: pointer;
+      $color: rgb(88, 174, 230);
+
+      padding: .75rem 1.25rem;
+      border-radius: 10rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: .15rem;
+      transition: all .3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color;
+        border-radius: 10rem;
+        z-index: -2;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($color, 15%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .Practice-images {
+    background-image: url('../../assets//image//Sail.png');
+    width: 600px;
+    height: 590px;
+    border-radius: 50% 50% 50% 0%;
+
+    img {
+      display: flex;
+    }
+  }
+}

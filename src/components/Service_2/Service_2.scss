@@ -1,0 +1,133 @@
+@import "../styles/mixin";
+
+.Service_2 {
+  width: 1440px;
+  height: 572px;
+  margin: 0 auto;
+  position: relative;
+  top: 78px;
+  display: flex;
+  justify-content: left;
+
+  .Service-container_2 {
+    display: flex;
+    position: relative;
+    left: 14pc;
+
+    img {
+      /* Add styles for images here if needed */
+    }
+
+    .Service-texts_2 {
+      text-align: left;
+      position: relative;
+      top: 35px;
+
+      h2 {
+        width: 430px;
+        height: 70px;
+        color: rgb(45, 47, 48);
+        font-family: 'Nunito', sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+
+      h1 {
+        height: 0;
+        color: rgb(45, 47, 48);
+        font-family: 'Nunito', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+
+      div {
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 14px;
+          height: 14px;
+          position: relative;
+          top: 42px;
+          text-align: left;
+        }
+
+        p {
+          position: relative;
+          left: 20px;
+          top: 4px;
+          color: rgb(45, 47, 48);
+          font-family: 'Nunito', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          height: 0;
+        }
+      }
+    }
+
+    $color: rgb(88, 174, 230);
+
+    button {
+      width: 137px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(88, 174, 230);
+      border-radius: 15px;
+      border: none;
+      color: rgb(255, 255, 255);
+      font-family: 'Nunito', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 1px;
+      position: relative;
+      top: 40px;
+      cursor: pointer;
+      padding: .75rem 1.25rem;
+      text-transform: uppercase;
+      transition: all .3s;
+      overflow: hidden;
+      z-index: 1;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color;
+        border-radius: 10rem;
+        z-index: -2;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($color, 15%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

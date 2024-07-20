@@ -1,0 +1,29 @@
+.RibbonInfo {
+  width: 1440px;
+  height: 250px;
+  margin: 0 auto;
+  
+  .RibbonInfo_container {
+    width: 1420px;  
+    height: 180px;
+    background-color: rgb(45, 47, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 34px;
+    
+    h1 {
+      
+      color: rgb(255, 255, 255);
+          font-family: 'Nunito', sans-serif;
+          font-size: 41px;
+          font-weight: 700;
+          line-height: 110%;
+          letter-spacing: 1px;
+          text-align: center;
+          text-transform: uppercase;        
+    }
+
+  }
+}

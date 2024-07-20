@@ -1,0 +1,90 @@
+@import "../styles/mixin";
+
+body {
+  background-color: #FFFFFF;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #FFFFFF ;
+  padding: 16px ; // Добавлено некоторое внутреннее отступы для верхнего и нижнего края/
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, .2);
+          
+  // width: 100%;
+  
+  .header-container {
+    @include flexbox(space-between, center);
+    width: 1440px;
+  margin: 0 auto; 
+  }
+
+
+  .header__logo {
+    
+  }
+  
+  .header__logo:hover {
+    opacity: 0.9;
+    transition: 0.8;
+  }
+
+  .header__contact {
+    // width: 124px;
+    color: rgb(45, 47, 48);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+
+    .phone {
+      text-decoration: none;
+      color: rgb(45, 47, 48);
+    }
+  }
+
+  .header__nav {
+    width: 533px;
+    max-width: 100%;
+    @include flexbox(space-between, center);
+
+    .header__link {
+      color: rgb(88, 88, 88);
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 16px;
+      letter-spacing: 1px;
+      text-align: center;
+      opacity: 0.9;
+      text-decoration: none; // Убираем подчеркивание ссылки
+
+      &:hover {
+        opacity: 1; // Изменение прозрачности при наведении
+      }
+    }
+  }
+
+  .header__license {
+    color: rgb(88, 88, 88);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    opacity: 0.9;
+
+    .header__License {
+      text-decoration: none;
+      color: rgb(88, 88, 88);
+    }
+  }
+  .burger{
+    display: none;
+  }
+}
